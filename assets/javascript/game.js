@@ -28,10 +28,22 @@ document.addEventListener("DOMContentLoaded", function(){
     var losses = 0
     $("losses").text("Losses: " + losses)
 
+    //on click function
     $(".buttons").on("click", function (){
-        var newscore = score += parseInt($(this).val()); 
-        console.log("new " + newscore);
-        
+      score += parseInt($(this).val()); 
+        console.log(score);
+
+        $("#userscore").text(score)
+        if (score === num) {
+            wins++;
+            alert("woooooo hooooooo!!!");
+            $("#wins").text("Wins: " + wins)
+        }
+        else if (score > num) { 
+            losses++;
+            alert("hahahahha you're a loser");
+            $("#losses").text("Losses: " + losses)
+        }
 
 
 
