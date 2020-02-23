@@ -37,13 +37,31 @@ document.addEventListener("DOMContentLoaded", function(){
         if (score === num) {
             wins++;
             alert("woooooo hooooooo!!!");
-            $("#wins").text("Wins: " + wins)
+            $("#wins").text("Wins: " + wins);
+            reset();
         }
         else if (score > num) { 
             losses++;
             alert("hahahahha you're a loser");
-            $("#losses").text("Losses: " + losses)
+            $("#losses").text("Losses: " + losses);
+            reset ();
         }
+
+    //reset function
+    function reset () {
+        score = 0
+        $("#userscore").text(score);
+        num = random(30,50);
+        $("#num").text("goal: " + num);
+        $("#b1").val(random(1,9));
+        console.log($("#b1").val());
+        $("#b2").val(random(1,9));
+        console.log($("#b2").val());
+        $("#b3").val(random(1,9));
+        console.log($("#b3").val());
+        $("#b4").val(random(1,9));
+        console.log($("#b4").val());
+    }
 
 
 
