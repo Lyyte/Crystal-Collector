@@ -28,6 +28,15 @@ document.addEventListener("DOMContentLoaded", function(){
     var losses = 0
     $("losses").text("Losses: " + losses)
 
+    $(".buttons").on("click", function (){
+        var newscore = score += parseInt($(this).val()); 
+        console.log("new " + newscore);
+        
+
+
+
+
+    });
 
 
 
