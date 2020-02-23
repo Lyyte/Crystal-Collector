@@ -6,7 +6,8 @@ function random (min, max){
 // gives initial values on load
 document.addEventListener("DOMContentLoaded", function(){
     // gives value to number goal
-    $("#pazaak-number").append(random(30,50));
+    var num = random(30,50)
+    $("#num").text("goal: " + num)
 
     // gives button values
     $("#b1").val(random(1,9));
@@ -17,5 +18,7 @@ document.addEventListener("DOMContentLoaded", function(){
     console.log($("#b3").val());
     $("#b4").val(random(1,9));
     console.log($("#b4").val());
+
+
 
 }); 
