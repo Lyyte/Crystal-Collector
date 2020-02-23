@@ -19,6 +19,18 @@ document.addEventListener("DOMContentLoaded", function(){
     $("#b4").val(random(1,9));
     console.log($("#b4").val());
 
+    var score = 0
+    $("#userscore").text(score)
+
+    var wins = 0
+    $("#wins").text("Wins: " + wins)
+
+    var losses = 0
+    $("losses").text("Losses: " + losses)
+
+
+
+
 
 
 }); 
