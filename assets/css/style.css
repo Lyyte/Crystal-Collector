@@ -23,3 +23,40 @@ h1 {
   padding: 50px; 
   width: 960px;
 }  
+
+.buttons {
+  float: right;
+  position: relative;
+}
+
+#userscore {
+  position: relative;
+  float: right;
+  padding: 50px;
+  background-color: mediumvioletred;
+  font-size: 50px;
+}
+
+#num {
+  position: relative;
+  float: right;
+  padding: 50px;
+  background-color: mediumvioletred;
+  font-size: 50px;
+}
+
+#wins {
+  position: relative;
+  float: left;
+  padding: 50px;
+  background-color: mediumvioletred;
+  font-size: 50px;
+}
+
+#losses {
+  position: relative;
+  float: left;
+  padding: 50px;
+  background-color: mediumvioletred;
+  font-size: 50px;
+}
