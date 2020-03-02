@@ -4,6 +4,22 @@ body {
     background-color: lightskyblue;
   }
 
-  .buttons {
-    background-color: lightskyblue;
+h1 {
+  float: right;
+  position: relative;
+  right: 50%;
+  text-align: center;
+  background-color: mediumturquoise;
+  padding: 20px; 
+  margin-bottom: 50000px;
   }
+
+#Instructions {
+  float: right;
+  right: 12%;
+  position: relative;
+  text-align: center;
+  background-color: mediumturquoise;
+  padding: 50px; 
+  width: 960px;
+}  
